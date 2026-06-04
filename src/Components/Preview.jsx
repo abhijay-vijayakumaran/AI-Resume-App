@@ -52,7 +52,7 @@ function Preview({ resumeData, finish, resumeId, setResumeData }) {
       const ratio = canvasWidth / canvasHeight
 
       let imgWidth = pdfWidth
-      const imgHeight = (canvasHeight * imgWidth) / canvasWidth
+      let imgHeight = (canvasHeight * imgWidth) / canvasWidth
 
       if (imgHeight > pdfHeight) {
         imgHeight = pdfHeight
